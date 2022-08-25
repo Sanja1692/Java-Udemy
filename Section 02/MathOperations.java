@@ -24,6 +24,19 @@ public class MathOperations{
         System.out.println("Andromeda has "+(starsInAndromeda/starsInMilkyWay)+" times more stars.");
         System.out.println("Snape caught the error. Furious, he divided Ron's score to:"+(testScore/bonusMarks)+".");
 
+        System.out.println("10 is an even number, since dividing 10 by 2 has a remainder of:"+(10%2));
+        System.out.println("5 is an odd number, since dividing 5 by 2 has a remainder of:"+(5%2));
+
+        int counter=0;
+        counter++; //1
+        counter++;//2
+        counter++;//3
+        System.out.println("I count:"+ counter);
+        counter--;
+        counter--;
+        counter--;
+        System.out.println("I count:"+ counter);
+
+
         }
 }
-
