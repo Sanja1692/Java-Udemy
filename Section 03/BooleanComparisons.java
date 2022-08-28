@@ -20,5 +20,8 @@ public class BooleanComparisons {
         double sales = 37.55;
         double costs = 5.55;
         System.out.println( sales < costs);
+        
+        double value = 3.6;
+        System.out.println((int)value == 3); // true
     }
 }
