@@ -16,7 +16,16 @@ public class Calendar {
             //  "Saturday": print ("I'm free!!"); 
             //  "Sunday": print ("I'm free!!"); 
             //  "otherwise": print ("that's not a day."); 
-
+        switch (day){
+            case "Monday":System.out.println("Sorry, I have to stay at work late."); break;//without BREAK he runs from 5 until the end
+            case "Tuesday":System.out.println("Sorry, I have to stay at worklooks like I have meetings all day.");break;
+            case "Wednesday":System.out.println("I have a dentist appointment. Some other time!");break;
+            case "Thursday":System.out.println("Sorry, thursday is date night!");break;
+            case "Friday":System.out.println("I'm free!!");break;
+            case "Saturday":System.out.println("I'm free!!");break;
+            case "Sunday": System.out.println("I'm free!!"); break;
+            default:System.out.println("That's not a day.");
+        }
         
         
 
