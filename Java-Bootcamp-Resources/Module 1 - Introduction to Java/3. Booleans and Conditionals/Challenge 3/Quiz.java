@@ -4,26 +4,34 @@ public class Quiz {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
+        int score = 0;
 
         System.out.println("1. Which country held the 2016 Summer Olympics?");
         System.out.println("\ta) China\n\tb) Ireland\n\tc) Brazil\n\td) Italy\n");
+        String country = scan.next();
         //store answer 1
+        if (country == "Brazil"){
+            score+= 5;
+        }else{
+            ................
+        }
 
         System.out.println("\n2. Which planet is the hottest?");
         System.out.println("\ta) Venus\n\tb) Saturn\n\tc) Mercury\n\td) Mars\n");
+        String planet = scan.next();
         //store answer 2
 
         System.out.println("\n3. What is the rarest blood type?");
         System.out.println("\ta) O\n\tb) A\n\tc) B\n\td) AB-Negative\n");
+        String blood = scan.next();
         //store answer 3
 
         System.out.println("\n4. Which one of these characters is friends with Harry Potter?");
         System.out.println("\ta) Ron Weasley\n\tb) Hermione Granger\n\tc) Draco Malfoy\n");
+        String harry = scan.next();
         //store answer 4
 
-        int score = 0;
-
-
+        
         //Task 2: Check each answer - For each correct answer, add 5 points to the score. 
         
         System.out.println("Your final score is: " + score + "/20");
