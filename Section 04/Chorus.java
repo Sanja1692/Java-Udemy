@@ -1,6 +1,8 @@
 public class Chorus {
     public static void main(String[] args) {
         singChorus();
+        singChorus();
+        singChorus();
      
     }
     public static void singChorus() {
