@@ -45,9 +45,7 @@ public class Delimiters {
         System.out.println("\tDecimals:"+decimal);
         System.out.println("\tWords:"+word);
         //nextLine - is skiped when is after another scan.next... because it continues in the same line to read values, that is why we use it than 2 times next.line or just one time scan.next()
-    
-        Scanner scan = new Scanner(System.in);
- 
+     
         //What is the value of each variable?
 
 
