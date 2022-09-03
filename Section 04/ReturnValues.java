@@ -14,6 +14,10 @@ public class ReturnValues {
     
     }
     public static double measureRectangle(double length, double width, String option){
+       if ( length < 0 || width < 0 ){
+         System.out.println("Length or width cannot be negative");
+         System.exit(0); //shut everithing down - nothing execute
+       }
         switch (option){
         case "area": return width * length;
         case "perimeter" : return 2*(length+width);
