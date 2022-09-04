@@ -6,9 +6,11 @@ public class AreaCalculator {
 
         
         //Task 5 – Call area functions.
-
+areaSquare(2.0);
         // double square = area of square with a side of 2.
+       areaRectangle(1.0,2.0);
         // double rectangle = area of rectangle with a length of 1, and a width of 2. 
+       areaTriangle(1.0, 2.0);
         // double triangle = area of triangle with a base of 1, and a width of 2. 
         // double circle = area of circle with a radius of 2. 
 
@@ -30,8 +32,13 @@ public class AreaCalculator {
      *  2. Calculates the area of the square. A = side²
      */
     public static double areaSquare(double side) {
-
-        return 0;
+        double areaS = side * side;
+        if (areaS < 0) {
+            System.out.println("Error: impossible.");}
+            else {
+                System.out.println("Area: " + areaS);
+            }
+        return areaS;
     }
 
 
@@ -49,7 +56,12 @@ public class AreaCalculator {
      *  2. Calculates the area of the rectangle. A = length * width
      */
     public static double areaRectangle(double length, double width) {
-
+        double areaR = length * width;
+        if (length < 0 || width < 0) {
+            System.out.println("Error: impossible.");}
+            else {
+                System.out.println("Area: " + areaR);
+            }
         return 0;  
     } 
 
@@ -66,7 +78,12 @@ public class AreaCalculator {
      *  2. Calculates the area of the triangle. A = (base * height)/2
      */ 
     public static double areaTriangle(double base, double height) {
-
+        double areaT = (base * height)/2;
+        if (base < 0 || height < 0) {
+            System.out.println("Error: impossible.");}
+            else {
+                System.out.println("Area: " + areaT);
+            }
         return 0; 
     }
 
@@ -83,7 +100,12 @@ public class AreaCalculator {
      *  2. Calculates the area of the circle. 
      */ 
     public static double areaCircle(double radius) {
-
+        double areaC = π ∗ radius*radius;
+        if (radius < 0) {
+            System.out.println("Error: impossible.");}
+            else {
+                System.out.println("Area: " + areaC);
+            }
         return 0;
     }
 
