@@ -12,6 +12,7 @@ areaSquare(2.0);
         // double rectangle = area of rectangle with a length of 1, and a width of 2. 
        areaTriangle(1.0, 2.0);
         // double triangle = area of triangle with a base of 1, and a width of 2. 
+        areaCircle(2.0);
         // double circle = area of circle with a radius of 2. 
 
 
@@ -100,7 +101,7 @@ areaSquare(2.0);
      *  2. Calculates the area of the circle. 
      */ 
     public static double areaCircle(double radius) {
-        double areaC = π ∗ radius*radius;
+        double areaC = Math.PI * (2 * radius);
         if (radius < 0) {
             System.out.println("Error: impossible.");}
             else {
