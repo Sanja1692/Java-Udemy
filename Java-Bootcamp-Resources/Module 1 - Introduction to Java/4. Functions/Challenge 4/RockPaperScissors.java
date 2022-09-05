@@ -8,9 +8,17 @@ public class RockPaperScissors {
         System.out.println("Let's play Rock Paper Scissors.");
         System.out.println("When I say 'shoot', Choose: rock, paper, or scissors.\n");
         System.out.println("Are you ready? Write 'yes' if you are.");
+        String answer1 = scan.next();
 
     //Task 1: See if the user wants to play. 
-
+        if(answer1.equals("yes")){
+        System.out.println("Great!\n");
+        System.out.println("Rock, paper, or scissors, shoot!\n");
+        String yourChoice = scan.next();
+        }else{
+        System.out.println("You are not ready. Darn, some other time...! Shutting down.");
+        System.exit(0);
+        }
     /*Task 2: Set up the game
     
 
@@ -32,7 +40,20 @@ public class RockPaperScissors {
 
 
     //Task 3  – Write a function where the computer picks a random choice.
-
+public static String computerChoice(){
+    double randomNumber = Math.random()*3;
+    int integer = (int) randomNumber;
+    // randomNumber+=1;
+    switch (integer){
+        case 0: return "rock"; 
+        case 1: return "paper";
+        case 2: return "scissors";
+        default: return " ";
+    
+    }
+    
+       
+}
     /**
      * Function name: computerChoice - picks randomly between rock paper and scissors
      * @return a choice (String).
