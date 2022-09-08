@@ -14,7 +14,7 @@ public class RockPaperScissors {
         System.out.println("Great!\n");
         System.out.println("Rock, paper, or scissors, shoot!\n");
         String yourChoice = scan.next();
-        String computerChoice = scan.next();
+        String computerChoice = computerChoice();
         String result = result(yourChoice, computerChoice);
         printResult(yourChoice, computerChoice, result);
         }else{
@@ -133,11 +133,10 @@ public static String computerChoice(){
      *      – prints: The computer chose: <computer choice>
      *      – prints: <result>
      */
-      public void printResult(String yourChoice, String computerChoice, String result() {
+      public static void printResult(String yourChoice, String computerChoice, String result) {
         System.out.println("\nYou chose: " + yourChoice);
         System.out.println("\nThe computer chose: " + computerChoice);
-        System.out.println(result);
+        System.out.println("\n" + result);
 
-        
       }
 }
