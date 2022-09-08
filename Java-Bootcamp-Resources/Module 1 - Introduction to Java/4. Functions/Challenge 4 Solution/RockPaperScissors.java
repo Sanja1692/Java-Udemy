@@ -47,7 +47,6 @@ public class RockPaperScissors {
         double randomNumber = Math.random() * 3;
         int integer = (int) randomNumber;
 
-
         switch (integer) {
             case 0: return "rock";
             case 1: return "paper";
