@@ -19,6 +19,10 @@ public class CountingTool {
              Let's say Timmy entered 5, you would display: 0 1 2 3 4 5 
 
         */
+System.out.println("\nAnd now");
+        for (int i=10; i>number; i--) {
+            System.out.println(i + " ");
+        }
 
         scan.close();
     }
