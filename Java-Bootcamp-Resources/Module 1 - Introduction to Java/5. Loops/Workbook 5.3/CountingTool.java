@@ -23,6 +23,13 @@ System.out.println("\nAnd now");
         for (int i=10; i>number; i--) {
             System.out.println(i + " ");
         }
+        for (int i=2; i<10; i+=2) {  //The loop starts at i = 2, and keeps running as long as ' i ' is less than 10.
+            System.out.println(i + " ");
+        }
+        for (int i=10; i>=2; i-=2) {
+            System.out.println(i + " ");
+        }
+
 
         scan.close();
     }
