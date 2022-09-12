@@ -3,6 +3,7 @@ public class WhileLoops {
         for (int i = 25; i <= 30; i++) {
             System.out.println(i);
     }
+    //int numb = 25;
     // while (numb <= 30) {
     //     System.out.println(numb);
     //     numb++;
