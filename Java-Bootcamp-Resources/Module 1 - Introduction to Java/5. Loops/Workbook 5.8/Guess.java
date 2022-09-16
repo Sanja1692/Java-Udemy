@@ -14,6 +14,7 @@ public class Guess  {
         
 
 while 
+System.out.println("Guess again: ");
         /* Task 2 
             1. Set up a loop that keeps running while the user is incorrect
                Every time they get it wrong, write 'Guess again: '
