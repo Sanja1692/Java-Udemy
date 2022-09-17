@@ -21,7 +21,10 @@ public class Doubles {
         // Task 4: After they roll doubles, print: You rolled doubles!
     }
 
-
+    public static void rollDice(){
+        int randomNumber = Math.random() * 7;
+        return randomNumber;
+    }
     /** Task 1 
      * Function name: rollDice – rolls a dice between 1 and 6
      * @return randomNumber (int)
