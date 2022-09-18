@@ -20,7 +20,6 @@ public class JavaRolls {
               2. Get the user to enter any value
         */
       System.out.println("Great, here are the rules:\n - If you roll a 6 the game stops.\n - If you roll a 4 nothing happens.\n - Otherwise, you get 1 point.\n You must collect at least 3 points to win. Enter anything to roll:");
-     String roll = scan.next();
 
        int score = 0;
       
@@ -30,16 +29,30 @@ public class JavaRolls {
           2. During each run, get them to enter a random value
       */
       while (true){
-        System.out.println("Enter a random number:");
-        int random = scan.nextInt();
+        scan.next();
         int diceRoll = rollDice();
         System.out.println("You rolled a "+diceRoll+".");
+        if((diceRoll)==6){
+        System.out.println("End of game.");
+        break;//System.exit(0);
+      }else if((diceRoll)==4){
+        System.out.println("Zero points. Keep rolling.");
+      }else{
+        score+=1;//                score++;
+        System.out.println("One point. Keep rolling.");
+      }
       }    
        /*   
           Task 5
            1. During each run, call the rollDice() function.
            2. Print each dice roll like so: You rolled a <diceRoll>.           
       */     
+      System.out.println("\nYour score is: " + score);
+      if(score >=3){
+      System.out.println(" Wow, that's lucky. You win!");
+      }else{
+      System.out.println("Tough luck, you lose :(");
+      }
       /*    
           Task 6
             If the user rolls a 6:
