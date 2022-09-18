@@ -8,7 +8,8 @@ public class JavaRolls {
               1. print: Let's play Rolling Java. Type anything to start.
               2. Get the user to enter any value
         */
-
+      System.out.println("Let's play Rolling Java. Type anything to start.");
+      String start = scan.next();
         /* Task 2: 
               1. Once the user is ready, print: 
                     Great, here are the rules:\n
@@ -18,6 +19,8 @@ public class JavaRolls {
                     You must collect at least 3 points to win. Enter anything to roll:
               2. Get the user to enter any value
         */
+      System.out.println("Great, here are the rules:\n - If you roll a 6 the game stops.\n - If you roll a 4 nothing happens.\n - Otherwise, you get 1 point.\n You must collect at least 3 points to win. Enter anything to roll:");
+     String roll = scan.next();
 
        int score = 0;
       
@@ -25,13 +28,19 @@ public class JavaRolls {
          Task 3
           1. Make a while loop that runs forever
           2. During each run, get them to enter a random value
-          
-          
+      */
+      while (true){
+        System.out.println("Enter a random number:");
+        int random = scan.nextInt();
+        int diceRoll = rollDice();
+        System.out.println("You rolled a "+diceRoll+".");
+      }    
+       /*   
           Task 5
            1. During each run, call the rollDice() function.
            2. Print each dice roll like so: You rolled a <diceRoll>.           
-           
-          
+      */     
+      /*    
           Task 6
             If the user rolls a 6:
               1. print: End of game.
@@ -67,6 +76,9 @@ public class JavaRolls {
      * @return randomNumber (int)
      * 
      */ 
-  
-  
+  public static int rollDice() {
+    double randomNumber = Math.random() * 6;
+    randomNumber+= 1;
+    return (int)randomNumber;
+  }
 }
