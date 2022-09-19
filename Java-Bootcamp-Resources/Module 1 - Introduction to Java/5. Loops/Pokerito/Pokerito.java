@@ -19,7 +19,8 @@ public class Pokerito {
         >> • Ready? Type anything if you are.
         |
         */
-        
+    System.out.println("Task 2: Explain the rules \nLet's play Pokerito. Type anything when you're ready.\nIt's like Poker, but a lot simpler.\n \n • There are two players, you and the computer.\n • The dealer will give each player one card.\n • Then, the dealer will draw five cards (the river)\n • The player with the most river matches wins!\n • If the matches are equal, everyone's a winner!\n \n • Ready? Type anything if you are.");
+    scan.nextLine();
 
         /*Task 3: Present the user with a card
          println 'Here's your card:'
@@ -28,6 +29,10 @@ public class Pokerito {
          println 'Here's the computer's card:'
          <show computer's card>
         */
+        String userCard = randomCard();
+        String computerCard = randomCard();
+        System.out.println("Here's your card: \n"+userCard);
+        System.out.println("\nHere's the computer's card: \n"+computerCard);
 
         int yourMatches = 0;
         int computerMatches =0;
@@ -45,7 +50,13 @@ public class Pokerito {
          *      <print card>
          *      ...
          */
-
+        for (int i = 0; i < 5; i++) {   
+        for (int j = 0; j < 5; j++) {
+    scan.nextLine();
+         userCard = randomCard();
+            System.out.println("Card 1: \n\n"+userCard);
+        }
+        }
         /** Task 5 - Get the winner
          * 
          * • Count your number of matches.
