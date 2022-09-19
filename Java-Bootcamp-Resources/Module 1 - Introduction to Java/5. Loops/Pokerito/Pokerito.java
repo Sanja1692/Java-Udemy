@@ -70,5 +70,100 @@ public class Pokerito {
      *   1. Gets a random number between 1 and 13.
      *   2. Returns a card that matches the random number (get the String values from cards.text).   
      */
-
+    public static String randomCard(){
+        double randomNumber = Math.random()*13;
+        randomNumber += 1;
+        if(randomNumber == 1){
+            System.out.println(" _____\n"+
+            "  |A _  |\n"+ 
+            "  | ( ) |\n"+
+            "  |(_'_)|\n"+
+            "  |  |  |\n"+
+            "  |____V|\n");
+        } else  if(randomNumber == 2){
+            System.out.println(" _____\n"+
+            "  |A _  |\n"+ 
+            "  | ( ) |\n"+
+            "  |(_'_)|\n"+
+            "  |  |  |\n"+
+            "  |____V|\n");
+        } if(randomNumber == 3){
+            System.out.println(" _____\n"+
+            "  |A _  |\n"+ 
+            "  | ( ) |\n"+
+            "  |(_'_)|\n"+
+            "  |  |  |\n"+
+            "  |____V|\n");
+        } if(randomNumber == 4){
+            System.out.println(" _____\n"+
+            "  |A _  |\n"+ 
+            "  | ( ) |\n"+
+            "  |(_'_)|\n"+
+            "  |  |  |\n"+
+            "  |____V|\n");
+        } if(randomNumber == 5){
+            System.out.println(" _____\n"+
+            "  |A _  |\n"+ 
+            "  | ( ) |\n"+
+            "  |(_'_)|\n"+
+            "  |  |  |\n"+
+            "  |____V|\n");
+        } if(randomNumber == 1){
+            System.out.println(" _____\n"+
+            "  |A _  |\n"+ 
+            "  | ( ) |\n"+
+            "  |(_'_)|\n"+
+            "  |  |  |\n"+
+            "  |____V|\n");
+        } if(randomNumber == 1){
+            System.out.println(" _____\n"+
+            "  |A _  |\n"+ 
+            "  | ( ) |\n"+
+            "  |(_'_)|\n"+
+            "  |  |  |\n"+
+            "  |____V|\n");
+        } if(randomNumber == 1){
+            System.out.println(" _____\n"+
+            "  |A _  |\n"+ 
+            "  | ( ) |\n"+
+            "  |(_'_)|\n"+
+            "  |  |  |\n"+
+            "  |____V|\n");
+        } if(randomNumber == 1){
+            System.out.println(" _____\n"+
+            "  |A _  |\n"+ 
+            "  | ( ) |\n"+
+            "  |(_'_)|\n"+
+            "  |  |  |\n"+
+            "  |____V|\n");
+        } if(randomNumber == 1){
+            System.out.println(" _____\n"+
+            "  |A _  |\n"+ 
+            "  | ( ) |\n"+
+            "  |(_'_)|\n"+
+            "  |  |  |\n"+
+            "  |____V|\n");
+        } if(randomNumber == 1){
+            System.out.println(" _____\n"+
+            "  |A _  |\n"+ 
+            "  | ( ) |\n"+
+            "  |(_'_)|\n"+
+            "  |  |  |\n"+
+            "  |____V|\n");
+        } if(randomNumber == 1){
+            System.out.println(" _____\n"+
+            "  |A _  |\n"+ 
+            "  | ( ) |\n"+
+            "  |(_'_)|\n"+
+            "  |  |  |\n"+
+            "  |____V|\n");
+        } if(randomNumber == 1){
+            System.out.println(" _____\n"+
+            "  |A _  |\n"+ 
+            "  | ( ) |\n"+
+            "  |(_'_)|\n"+
+            "  |  |  |\n"+
+            "  |____V|\n");
+        }
+    }
 }
