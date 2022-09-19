@@ -50,12 +50,12 @@ public class Pokerito {
          *      <print card>
          *      ...
          */
+        System.out.println("Now, the dealer will draw five cards. Press enter to continue.");
         for (int i = 0; i < 5; i++) {   
-        for (int j = 0; j < 5; j++) {
     scan.nextLine();
          userCard = randomCard();
-            System.out.println("Card 1: \n\n"+userCard);
-        }
+            System.out.println("Card "+i+": \n\n"+userCard);
+       
         }
         /** Task 5 - Get the winner
          * 
