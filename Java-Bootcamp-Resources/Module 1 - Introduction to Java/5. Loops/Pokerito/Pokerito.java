@@ -51,7 +51,7 @@ public class Pokerito {
          *      ...
          */
         System.out.println("Now, the dealer will draw five cards. Press enter to continue.");
-        for (int i = 1; i < 5; i++) {   
+        for (int i = 1; i <= 5; i++) {   
         scan.nextLine();
         String draw = randomCard();
         if(userCard.equals(draw)){
