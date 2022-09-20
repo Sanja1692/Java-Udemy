@@ -49,6 +49,15 @@ public class Blackjack {
             
         
         //For tasks 9 to 13, see the article: Blackjack Part II. 
+//         First, it's the player's turn. The player can decide to hit or stay.
+// hit: draw another card.
+// stay: do nothing.
+// If the player decides to hit, and their hand value exceeds 21, they go bust (lose).
+// Once the player decides to stay, the dealer reveals the hidden card.
+// Then, the dealer must hit until their total gets to 17. At 17 points or higher, the dealer's turn ends.
+// You win if your hand value is higher than the dealer's hand.
+// You win if the dealer goes bust (exceeds 21)
+// You lose if the dealer's hand value is higher than yours.
          scan.close();
 
     }
