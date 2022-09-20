@@ -18,7 +18,7 @@ public class Blackjack {
         System.out.println("\n You get a \n" + cardString(yourFirstCard) + "\n and a \n" + cardString(yourSecondCard));
         //Task 5 – Print the sum of your hand value.
         //       – print: your total is: <hand value>
-        int yourHand = yourFirstCard + yourSecondCard;
+        int yourHand = Math.min(yourFirstCard, 10) + Math.min(yourSecondCard, 10); //return minimum number not bigger than 10
         System.out.println("Your total is: " + yourHand);
 
         //Task 6 – Get two random cards for the dealer.
@@ -26,7 +26,8 @@ public class Blackjack {
         //       – Print: \nThe dealer's total is hidden
         int dealerFirstCard = drawRandomCard();
         int dealerSecondCard = drawRandomCard();
-        System.out.println("The dealer shows \n" + cardString(dealerFirstCard) + "\nand has a card facing down \n" +cardString(dealerSecondCard) );
+        System.out.println("The dealer shows \n" + cardString(dealerFirstCard) + "\nand has a card facing down \n" +faceDown() );
+        int dealerHand = Math.min(dealerFirstCard, 10) + Math.min(dealerSecondCard, 10);
         System.out.println("\nThe dealer's total is hidden");
        
         //Task 8 – Keep asking the player to hit or stay (while loop).
@@ -42,7 +43,7 @@ public class Blackjack {
             if(player.equals("stay")){
                 break;}
             int yourNextCard = drawRandomCard();
-            yourHand= yourHand + yourNextCard;
+            yourHand= yourHand + Math.min(yourNextCard, 10);
         System.out.println("\nYou get a \n " + cardString(yourNextCard));
         System.out.println("\nYour new total is " + yourHand);
         }
