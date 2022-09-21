@@ -41,16 +41,27 @@ public class Blackjack {
         while(true){
             String player = hitOrStay();
             if(player.equals("stay")){
+                System.out.println("The dealer shows \n" + cardString(dealerFirstCard) + "\nand \n" +cardString(dealerSecondCard) );
+                System.out.println("The dealer total is " + dealerHand);
                 break;}
             int yourNextCard = drawRandomCard();
-            yourHand= yourHand + Math.min(yourNextCard, 10);
+            yourHand = yourHand + Math.min(yourNextCard, 10);
         System.out.println("\nYou get a \n " + cardString(yourNextCard));
         System.out.println("\nYour new total is " + yourHand);
         }
             
-        
+        if(yourHand>21){
+                System.out.println("\nYou lose \n");
+                System.exit(0);
+        }else if(yourHand>dealerHand){
+                System.out.println("\nYou win! \n");
+        }else if(dealerHand>21) {
+                System.out.println("\nYou win! \n");
+        }else{
+                System.out.println("\nYou lose \n");
+        }
         //For tasks 9 to 13, see the article: Blackjack Part II. 
-//         First, it's the player's turn. The player can decide to hit or stay.
+// First, it's the player's turn. The player can decide to hit or stay.
 // hit: draw another card.
 // stay: do nothing.
 // If the player decides to hit, and their hand value exceeds 21, they go bust (lose).
@@ -59,7 +70,8 @@ public class Blackjack {
 // You win if your hand value is higher than the dealer's hand.
 // You win if the dealer goes bust (exceeds 21)
 // You lose if the dealer's hand value is higher than yours.
-         scan.close();
+        
+scan.close();
 
     }
 
