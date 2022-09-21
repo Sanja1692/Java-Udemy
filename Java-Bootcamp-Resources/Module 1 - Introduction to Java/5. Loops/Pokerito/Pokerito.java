@@ -19,7 +19,10 @@ public class Pokerito {
         >> • Ready? Type anything if you are.
         |
         */
-    System.out.println("Task 2: Explain the rules \nLet's play Pokerito. Type anything when you're ready.\nIt's like Poker, but a lot simpler.\n \n • There are two players, you and the computer.\n • The dealer will give each player one card.\n • Then, the dealer will draw five cards (the river)\n • The player with the most river matches wins!\n • If the matches are equal, everyone's a winner!\n \n • Ready? Type anything if you are.");
+    System.out.println("\nLet's play Pokerito. Type anything when you're ready.");
+    scan.nextLine();
+    
+   System.out.println("\nIt's like Poker, but a lot simpler.\n \n • There are two players, you and the computer.\n • The dealer will give each player one card.\n • Then, the dealer will draw five cards (the river)\n • The player with the most river matches wins!\n • If the matches are equal, everyone's a winner!\n \n • Ready? Type anything if you are.");
     scan.nextLine();
 
         /*Task 3: Present the user with a card
