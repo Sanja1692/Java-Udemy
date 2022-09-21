@@ -48,17 +48,25 @@ public class Blackjack {
             yourHand = yourHand + Math.min(yourNextCard, 10);
         System.out.println("\nYou get a \n " + cardString(yourNextCard));
         System.out.println("\nYour new total is " + yourHand);
-        }
-            
         if(yourHand>21){
                 System.out.println("\nYou lose \n");
                 System.exit(0);
-        }else if(yourHand>dealerHand){
+        }
+        }
+        while(dealerHand< 17){
+                        int dealerNextCard = drawRandomCard();
+                        dealerHand+= Math.min(dealerNextCard,10);
+                        System.out.println("\n Dealer gets a \n" + cardString(dealerNextCard));
+                        System.out.println("Dealer's total is " + dealerHand);
+        }   
+        
+        if(yourHand>dealerHand){
                 System.out.println("\nYou win! \n");
         }else if(dealerHand>21) {
                 System.out.println("\nYou win! \n");
         }else{
                 System.out.println("\nYou lose \n");
+                System.exit(0);
         }
         //For tasks 9 to 13, see the article: Blackjack Part II. 
 // First, it's the player's turn. The player can decide to hit or stay.
