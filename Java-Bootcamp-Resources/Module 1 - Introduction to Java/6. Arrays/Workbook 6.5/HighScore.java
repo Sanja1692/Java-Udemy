@@ -15,8 +15,12 @@ public class HighScore {
           *   2. println("\n\nThe highest score is: <>. Give that man a cookie!");
 
           */
-
-
+          randomNumber();
+        int randNumbers[]={20000,5653,7507,1435,17785,20346,49978,1811,346,39798};
+        for (int i = 0; i < randNumbers.length; i++) {
+        System.out.print(randNumbers[i]+ " ");
+        
+        }
     }
     /** Task 1
      * Function name – randomNumber
@@ -25,6 +29,10 @@ public class HighScore {
      * Inside the function
      *  - returns a random number between 0 and 50000
      */
-    
+    public static double randomNumber(){
+        double random = Math.random()*50000;
+        random++;
+        return (int)random;
+    }
 
 }

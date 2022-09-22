@@ -23,6 +23,8 @@ public class Grocer {
             System.out.println("\nSorry. We don't have that.");
             break;
         }
-    }
+        }
+        scan.close();
+
     }
 }
