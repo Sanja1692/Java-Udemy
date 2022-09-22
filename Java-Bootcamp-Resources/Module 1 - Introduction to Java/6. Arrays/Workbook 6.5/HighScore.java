@@ -1,6 +1,6 @@
 public class HighScore {
     public static void main(String[] args) {
-        
+        int[] randNumbers = {randomNumber(), randomNumber(), randomNumber(), randomNumber(), randomNumber(), randomNumber(), randomNumber(), randomNumber(), randomNumber(), randomNumber(), randomNumber(), randomNumber()};
         /** Task 2 
          *
          *    1. Create an array that stores 10 random numbers
@@ -15,12 +15,17 @@ public class HighScore {
           *   2. println("\n\nThe highest score is: <>. Give that man a cookie!");
 
           */
-          randomNumber();
-        int randNumbers[]={20000,5653,7507,1435,17785,20346,49978,1811,346,39798};
+          
+        System.out.println("\n\nHere are the scores: ");
+
         for (int i = 0; i < randNumbers.length; i++) {
         System.out.print(randNumbers[i]+ " ");
-        
         }
+        for (int i = 0; i < randNumbers.length; i++) {
+        if(randNumbers[i] > highScore) {//??
+            highScore = randNumbers[i];    
+        }
+        }System.out.println("\n\nThe highest score is: "+highScore+". Give that man a cookie!");
     }
     /** Task 1
      * Function name – randomNumber
@@ -29,10 +34,11 @@ public class HighScore {
      * Inside the function
      *  - returns a random number between 0 and 50000
      */
-    public static double randomNumber(){
+    public static int randomNumber(){
         double random = Math.random()*50000;
         random++;
-        return (int)random;
+        int randInt = (int)random;
+        return randInt;
     }
 
 }
