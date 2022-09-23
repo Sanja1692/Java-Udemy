@@ -14,5 +14,8 @@ public class Receipt {
                 println(\t<apple i >: $<price i >)
             }
         */
+        for (int i = 0; i < apples.length; i++){
+           System.out.println("\t"+apples[i]+": $"+price[i]);
+        }
     }
 }
