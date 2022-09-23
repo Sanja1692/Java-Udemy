@@ -10,8 +10,12 @@ public class RingAnnouncer {
          *
          * 
          * 
-         */
-
+         */int numOfWins = 0;
+            int numOfLosses = 0;
+        for (int i = 0; i < record.length; i++) {
+            
+        numOfWins = record[i].equals("WIN");
+        }
         /** Task 2
          * Print:
          *     • \nWith a professional record of <wins> Wins and <losses> losses. 
@@ -19,6 +23,7 @@ public class RingAnnouncer {
          *
          * 
          */        
-
+        System.out.println("\nWith a professional record of <wins> Wins and <losses> losses.");
+        System.out.println("\nHe is the pride of oracle: Java Fury!");
     }
 }
