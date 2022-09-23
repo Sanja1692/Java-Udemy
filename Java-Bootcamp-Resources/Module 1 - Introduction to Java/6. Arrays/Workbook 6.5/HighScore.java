@@ -22,7 +22,7 @@ public class HighScore {
         System.out.print(randNumbers[i]+ " ");
         }
         for (int i = 0; i < randNumbers.length; i++) {
-        if(randNumbers[i] > highScore) {//??
+        if(randNumbers[i] > highScore) {//MAX VALUE!!!
             highScore = randNumbers[i];    
         }
         }System.out.println("\n\nThe highest score is: "+highScore+". Give that man a cookie!");
