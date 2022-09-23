@@ -10,11 +10,18 @@ public class RingAnnouncer {
          *
          * 
          * 
-         */int numOfWins = 0;
+         */
+        System.out.println("Number of elements present in given array: " + record.length);     
+
+         int numOfWins = 0;
             int numOfLosses = 0;
         for (int i = 0; i < record.length; i++) {
-            
-        numOfWins = record[i].equals("WIN");
+            if(record[i].equals("WIN")) {
+            numOfWins = i; 
+            }
+            else {
+            numOfLosses++; 
+            }
         }
         /** Task 2
          * Print:
@@ -23,7 +30,7 @@ public class RingAnnouncer {
          *
          * 
          */        
-        System.out.println("\nWith a professional record of <wins> Wins and <losses> losses.");
+        System.out.println("\nWith a professional record of "+numOfWins+" Wins and "+numOfLosses+" losses.");
         System.out.println("\nHe is the pride of oracle: Java Fury!");
     }
 }
