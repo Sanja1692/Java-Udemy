@@ -8,13 +8,18 @@ public class Tax {
          *  Create a new array afterTax with the same length as price
          * 
          */
+        double[] afterTax = new double[price.length];
 
          /** Task 2:
           * 
           *  Update each element in afterTax to be: price + 13% * price.
           *
           */
-
+        for (int i = 0; i < afterTax.length; i++) {
+        afterTax[i] = price[i] + (13 * price[i]/100);
+        System.out.println("The original prices are: "+price[i]);
+        System.out.println("The prices after tax are: "+afterTax[i]);
+        }
          /** Task 3:
           * 
           * Print the following messages:
