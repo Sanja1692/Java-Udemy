@@ -7,7 +7,8 @@ public class PizzaDelivery {
          *   1. Ask the user: How many pizza toppings do you want?. 
          *   2. Then, pick up the result using Scanner.
          */
-
+        System.out.println("How many pizza toppings do you want?");
+        int topping = scan.nextInt();
         // Task 2 – Create the array here
 
         /** Task 3
@@ -15,7 +16,7 @@ public class PizzaDelivery {
          *  Create a for loop that runs through the length of the array.   
          * 
          */
-
+        System.out.println("Great, enter each topping!");
         /** Task 4 – Pick up the user's toppings and store them in the array.
          *  
          *  See the workbook article for more detail  
