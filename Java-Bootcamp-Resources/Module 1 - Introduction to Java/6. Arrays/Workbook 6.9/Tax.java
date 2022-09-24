@@ -15,11 +15,14 @@ public class Tax {
           *  Update each element in afterTax to be: price + 13% * price.
           *
           */
+        
         for (int i = 0; i < afterTax.length; i++) {
         afterTax[i] = price[i] + (13 * price[i]/100);
-        System.out.println("The original prices are: "+price[i]);
-        System.out.println("The prices after tax are: "+afterTax[i]);
+        // System.out.println("The original prices are: "+price[i]);
+        // System.out.println("The prices after tax are: "+afterTax[i]);
         }
+        System.out.println("The original prices are: "+ Arrays.toString(price));
+        System.out.println("The prices after tax are: "+ Arrays.toString(afterTax));
          /** Task 3:
           * 
           * Print the following messages:
