@@ -4,6 +4,8 @@ public class LotteryTickets {
     public static void main(String[] args) {
         int[] ticket = {34, 43, 45, 65, 21, 54};
         //Task 1 - Copy the elements of ticket into ticket2, but change the third value to 54. 
+        int[] ticket2 = new int[ticket.length];
+        ticket2[2] = 54; 
 
         System.out.print("Ticket 1 numbers: ");
         //Task 3 - Call printTicketNumbers for int[] ticket.   
@@ -21,6 +23,9 @@ public class LotteryTickets {
      *        i.e  1 4 6 3 2 6 
      *   2.   print a new line   
      */
+    public static void printTicketNumbers(int[] ticket) {
     
-}
+        
+    }
+    }
 
