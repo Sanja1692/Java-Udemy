@@ -22,7 +22,9 @@ public class Weather {
      *    3. Update all the values in the array according to: F = (C/5 * 9) + 32.
      *    4. return the fahrenheit array.
      */   
-
+    public static double celciusToFahrenheit(double[] celsius) {
+        double[] fahrenheit = Arrays.copyOf(celcius,  celsius.length);
+    }
     /** Task 3
      * Function name - printTemperatures
      * @param temp ( double[] )
