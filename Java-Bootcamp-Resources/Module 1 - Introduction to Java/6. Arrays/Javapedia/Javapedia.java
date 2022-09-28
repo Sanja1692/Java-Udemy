@@ -10,6 +10,7 @@ public class Javapedia {
         int figures = scan.nextInt();
         //Task 2 – Create a 2D array with a variable number of rows, and 3 values per row.         
         String [][] database = new String[figures][3];
+        scan.nextLine(); 
         //Watch out for the nextLine() pitfall. 
         /* Task 3 
         for (____) {
@@ -35,9 +36,9 @@ public class Javapedia {
             System.out.print("\t - Name: ");
             database[i][0] = scan.nextLine();
             System.out.print("\t - Date of birth: ");
-            database[i][1] = scan.next();
+            database[i][1] = scan.nextLine();
             System.out.print("\t - Occupation: ");
-            database[i][2] = scan.next();
+            database[i][2] = scan.nextLine();
             System.out.print("\n");
             
         }
@@ -68,10 +69,15 @@ public class Javapedia {
      *     • each value in database has one space from the other value. 
      *     • print a new line.
      */
-    public static void print2DArray(int[][] database){
+    public static void print2DArray(String[][] array){
         System.out.println("\t");
-        System.out.println(" " + [i][j]);
-        System.out.println("\n");
+        for(int i=0; i<array.length; i++){
+            for(int j=0; j<array.length; j++){
+        System.out.println(" " + array[i][j]);
+            }        
+            System.out.println("\n");
+
+    }
 
     }
 }
