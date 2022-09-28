@@ -40,10 +40,10 @@ public class Javapedia {
     }
 
     public static void print2DArray(String[][] array) {
+        System.out.print("\t");
         for (int i = 0; i < array.length; i++) {
-            System.out.print("\t");
             for (int j = 0; j < array[i].length; j++) {
-                System.out.print(array[i][j] + " "); 
+                System.out.print(" " + array[i][j]); 
             }
             System.out.print("\n");
         }

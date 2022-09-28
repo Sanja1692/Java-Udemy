@@ -47,7 +47,6 @@ public class Javapedia {
         //Task 4: call print2DArray. 
         print2DArray(database);
         System.out.print("\nWho do you want information on? ");  
-        
         /*Task 5: Let the user search the database by name. 
             If there's a match:
               print(    tab of space    Name: <name>)
@@ -55,7 +54,18 @@ public class Javapedia {
               print(    tab of space    Occupation: <occupation>)
 
         */        
+        String name = scan.nextLine();
 
+        for (int i = 0; i < database.length; i++) {
+                if (name.equals(database[i][0])){
+        System.out.print("\t - Name: "+database[i][0]);
+        System.out.print("\t - Date of birth: "+database[i][1]);
+        System.out.print("\t - Occupation: "+database[i][2]);
+        }
+        // else{
+        //     System.out.println("There is no such entry in database.");
+        // }
+    }
         scan.close();
     }
 
