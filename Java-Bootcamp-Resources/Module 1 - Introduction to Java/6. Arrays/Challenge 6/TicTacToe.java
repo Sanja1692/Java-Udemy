@@ -8,7 +8,7 @@ public class TicTacToe {
             System.out.println("\nLet's play tic tac toe");
 
             //Task 1: Create an array with three rows of '_' characters.
-
+            String[][] array = new String[3][3];
             //Task 2: Call the function printBoard();
 
              
