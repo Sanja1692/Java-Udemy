@@ -19,7 +19,7 @@ public class TicTacToe {
              
               /*
               {  Task 3: Loop through turns.
-
+ 
                   if (X) turn {
                      Task 4: call askUser(). 
                      Task 5: populate the board using askUser's return value.
@@ -27,9 +27,18 @@ public class TicTacToe {
                       Task 4: call askUser(). 
                       Task 5: populate the board using askUser's return value. Then, print it.
 
-                  }
-
-                Task 6 - Call the function.
+                  }*/
+                for (int i = 0; i < 9; i++) {
+                  for (int j = 0; j < board.length; j++) {
+                  if (X turn)  {
+                    askUser(board); 
+                    // Task 5: populate the board using askUser's return value.
+                 } else {
+                  askUser(board); 
+                }
+              }
+                // Task 5: populate the board using askUser's return value. Then, print it.
+                /*Task 6 - Call the function.
                    if return value == 3 {
                      print: X wins and break the loop
                   } else if return value == -3 {
@@ -74,7 +83,14 @@ public class TicTacToe {
      *   3. Return the row and column in an int[] array.
      * 
      */
-
+      public static int[] askUser(char[] board) {
+        System.out.println("Pick a row and column number: ");
+        int[] spot = scan.nextInt();
+        if (spot){
+          System.out.println("Spot taken. Please choose again: ");
+        }
+        return int spot[][];
+      }
     /** Task 6 - Write a function that determines the winner
      * Function name - checkWin 
      * @param board (char[][])
@@ -87,6 +103,7 @@ public class TicTacToe {
      *   4. Check the left diagonal for a straight X or straight O (Task 9).
      *   5. Check the right diagonal for a straight X or straight O (Task 10).
      */
-
+      public static void checkWin(char[] board) {
+      }
 
 }
