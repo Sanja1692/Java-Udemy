@@ -104,6 +104,8 @@ public class TicTacToe {
      *   5. Check the right diagonal for a straight X or straight O (Task 10).
      */
       public static void checkWin(char[] board) {
+        int count = 0; 
+        
       }
 
 }
