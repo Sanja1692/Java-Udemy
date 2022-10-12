@@ -78,7 +78,8 @@ public class Hangman {
             if(word.charAt(i) != ' ') 
                 countLetters++;
             }
-        System.out.println(countLetters);
+        System.out.println('_'*countLetters);
+        
         System.out.println("Guess :"); 
         String guessLetter = scan.nextLine();
         guess++;
