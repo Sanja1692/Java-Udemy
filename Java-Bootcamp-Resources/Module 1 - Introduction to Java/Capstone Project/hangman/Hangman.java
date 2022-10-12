@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Hangman {
 
     public static String[] words = {"ant", "baboon", "badger", "bat", "bear", "beaver", "camel",
@@ -67,10 +69,15 @@ public class Hangman {
     " =========\n"};
 
     public static void main(String[] args) {
-        
-        for (int i = 0; i < words.length(); i++) {
-            System.out.println(words[i]);
+        Scanner scan = new Scanner(System.in);
+        int guess = 0;
+        // for (int i = 0; i < words.length(); i++) {
+        //     System.out.println(words[i]);
+            System.out.println("Guess :"); 
+            String guessLetter = sc;
 
+            System.out.println("Guess :" + guess);
+            guess++;
 
 
 
