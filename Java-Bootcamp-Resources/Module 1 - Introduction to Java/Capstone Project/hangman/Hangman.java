@@ -73,6 +73,12 @@ public class Hangman {
         Scanner scan = new Scanner(System.in);
         int guess = 0;
         String word = randomWord();
+        int countLetters = 0;
+        for(int i = 0; i < word.length(); i++) {
+            if(word.charAt(i) != ' ') 
+                countLetters++;
+            }
+        System.out.println(countLetters);
         System.out.println("Guess :"); 
         String guessLetter = scan.nextLine();
         guess++;
