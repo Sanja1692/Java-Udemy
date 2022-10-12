@@ -75,7 +75,7 @@ public class Hangman {
         String word = randomWord();
         int countLetters = 0;
         for(int i = 0; i < word.length(); i++) {
-            if(word.charAt(i) != ' ') 
+            if(word.charAt(i) != ' ')  // how many characters does the word contain
                 countLetters++;
             }
         System.out.println('_'*countLetters);
@@ -86,6 +86,7 @@ public class Hangman {
             
         System.out.println("Guess :" + guess);
         System.out.println("Word:" + guessLetter);
+        int misses = 0;
         System.out.println("Misses:");
             // if (guessLetter.equals(words[i])) {
             //     }
