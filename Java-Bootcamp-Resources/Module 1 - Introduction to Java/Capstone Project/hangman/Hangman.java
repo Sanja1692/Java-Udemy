@@ -72,6 +72,7 @@ public class Hangman {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int guess = 0;
+        int misses = 0;
         String word = randomWord();
         int countLetters = 0;
         for(int i = 0; i < word.length(); i++) {
@@ -80,14 +81,19 @@ public class Hangman {
             }
         System.out.println('_'*countLetters);
         
-        System.out.println("Guess :"); 
+        System.out.println("Guess :"+ guess); 
         String guessLetter = scan.nextLine();
         guess++;
             
         System.out.println("Guess :" + guess);
+        if(word.contains(guessLetter)){
+            System.out.println("Correct");
+        }else{
+            misses++;
+            System.out.println("Incorrect");
+        }
         System.out.println("Word:" + guessLetter);
-        int misses = 0;
-        System.out.println("Misses:");
+        System.out.println("Misses:"+misses);
             // if (guessLetter.equals(words[i])) {
             //     }
 
