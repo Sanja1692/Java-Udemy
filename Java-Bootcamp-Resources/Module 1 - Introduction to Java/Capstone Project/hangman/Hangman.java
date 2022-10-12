@@ -12,7 +12,8 @@ public class Hangman {
     "tiger", "toad", "trout", "turkey", "turtle", "weasel", "whale", "wolf",
     "wombat", "zebra"};
 
-    public static String[] gallows = {"+---+\n" +
+    public static String[] gallows = {
+    "+---+\n" +
     "|   |\n" +
     "    |\n" +
     "    |\n" +
@@ -71,21 +72,28 @@ public class Hangman {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int guess = 0;
-             for (int i = 0; i < words.length(); i++) {
-             System.out.println(words[i]);
-            System.out.println("Guess :"); 
-            String guessLetter = scan.nextLine();
-            guess++;
+        String word = randomWord();
+        System.out.println("Guess :"); 
+        String guessLetter = scan.nextLine();
+        guess++;
+            
+        System.out.println("Guess :" + guess);
+        System.out.println("Word:" + guessLetter);
+        System.out.println("Misses:");
+            // if (guessLetter.equals(words[i])) {
+            //     }
 
-            System.out.println("Guess :" + guess);
-            System.out.println("Word:" + guessLetter);
-            System.out.println("Misses:");
-            if (guessLetter.equals(words[i])) {
-                }
+        System.out.println("GOOD JOB!");
 
-            System.out.println("GOOD JOB!");
-
+            
+        
     }
+    public static String randomWord() {
+        int numWords = words.length;
+        double randomDouble = Math.random();
+        int randomW = (int)(randomDouble * numWords);
+        return words[randomW];
+        }
 
 }
 
