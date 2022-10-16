@@ -74,12 +74,13 @@ public class Hangman {
         int guess = 0;
         int misses = 0;
         String word = randomWord();
-        int countLetters = 0;
-        for(int i = 0; i < word.length(); i++) {
-            if(word.charAt(i) != ' ')  // how many characters does the word contain
-                countLetters++;
-            }
-        System.out.println('_'*countLetters);
+        char[] placeholders = new char[word.length()];
+        // int countLetters = 0;
+        // for(int i = 0; i < word.length(); i++) {
+        //     if(word.charAt(i) != ' ')  // how many characters does the word contain
+        //         countLetters++;
+        //     }
+        // System.out.println('_'*countLetters);
         
         System.out.println("Guess :"+ guess); 
         String guessLetter = scan.nextLine();
@@ -94,6 +95,10 @@ public class Hangman {
         }
         System.out.println("Word:" + guessLetter);
         System.out.println("Misses:"+misses);
+        if(misses==6){
+            System.out.println("You loses!");
+            System.exit(0);
+        }
             // if (guessLetter.equals(words[i])) {
             //     }
 
