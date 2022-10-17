@@ -132,12 +132,19 @@ public class Hangman {
             }
         }
     }
-    private static void printPlaceholders(char[] placeholders) {
+    public static void printPlaceholders(char[] placeholders) {
         for (int i = 0; i < placeholders.length; i++){
             System.out.print(" " + placeholders[i]);
         }
         System.out.println("\n");
     }
+
+    public static void printMissedGuesses(char[] misses) {
+        for (int i = 0; i < misses.length; i++) {
+            System.out.print(misses[i]);
+        }
+    }
+
 }
 
 
