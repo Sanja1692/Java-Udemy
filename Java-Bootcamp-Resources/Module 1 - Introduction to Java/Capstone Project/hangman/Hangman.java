@@ -84,17 +84,17 @@ public class Hangman {
 
         while(misses < 6){
         System.out.println("Guess :"+ guess); 
-        String guessLetter = scan.nextLine();
+        char guessLetter = scan.nextLine().charAt(0);
         guess++;
             System.out.print("\n");
             
         System.out.println("Guess :" + guess);
-        if(word.contains(guessLetter)){
-            System.out.println("Correct");
-        }else{
-            misses++;
-            System.out.println("Incorrect");
-        }
+        // if(word.contains(guessLetter)){
+        //     System.out.println("Correct");
+        // }else{
+        //     misses++;
+        //     System.out.println("Incorrect");
+        // }
         System.out.println("Word:" + guessLetter);
         System.out.println("Misses:"+misses);
         if(misses==6){
@@ -115,8 +115,29 @@ public class Hangman {
         double randomDouble = Math.random();
         int randomW = (int)(randomDouble * numWords);
         return words[randomW];
+    }
+    public static boolean checkGuess(String word, char guessLetter) {
+        for (int i = 0; i < word.length(); i++) {
+            if (word.charAt(i) == guessLetter) {
+                return true;
+            }
         }
-
+        return false;
+        
+    }
+    public static void updatePlaceholders(String word, char[] placeholders, char guessLetter) {
+        for (int i = 0; i < word.length(); i++) {   
+            if (word.charAt(i) == guessLetter) {
+                placeholders[i] = guessLetter;
+            }
+        }
+    }
+    private static void printPlaceholders(char[] placeholders) {
+        for (int i = 0; i < placeholders.length; i++){
+            System.out.print(" " + placeholders[i]);
+        }
+        System.out.println("\n");
+    }
 }
 
 
