@@ -81,10 +81,12 @@ public class Hangman {
         //         countLetters++;
         //     }
         // System.out.println('_'*countLetters);
-        
+
+        while(misses < 6){
         System.out.println("Guess :"+ guess); 
         String guessLetter = scan.nextLine();
         guess++;
+            System.out.print("\n");
             
         System.out.println("Guess :" + guess);
         if(word.contains(guessLetter)){
@@ -97,13 +99,14 @@ public class Hangman {
         System.out.println("Misses:"+misses);
         if(misses==6){
             System.out.println("You loses!");
+            System.out.println("\nThe word was: '" + word + "'");
             System.exit(0);
         }
             // if (guessLetter.equals(words[i])) {
             //     }
 
         System.out.println("GOOD JOB!");
-
+            }
             
         
     }
