@@ -100,7 +100,7 @@ public class Hangman {
         printMissedGuesses(missedGuesses);
         System.out.print("\n\n");
 
-        System.out.println("Guess :");         
+        System.out.println("Guess: ");         
         char guess = scan.nextLine().charAt(0);
         System.out.print("\n");
             
